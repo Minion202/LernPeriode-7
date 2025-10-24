@@ -8,6 +8,9 @@
 2. Welche groben Funktionalitäten soll Ihr *front end* zur Verfügung stellen? Eine To-Do-List, einen Timer und einen Weather forecast.
 3. Was möchten Sie insbesondere dabei lernen oder üben? CSS,HTML und Javascript.
 
+
+<img width="2000" height="1500" alt="image" src="https://github.com/user-attachments/assets/fefebeaf-6acc-40af-beb6-063c96172d9a" />
+
 ## 24.10.
 
 - [x] Arbeitspaket 1: Erstellen Sie mehrere Skizzen von Ihrem *front end*. Überlegen Sie sich auch, welche Elemente die Interaktion mit dem *back end* auslösen und wie sich die Oberfläche dadurch verändert. Bauen Sie auch Interaktionen ein, die *keinen* Aufruf der API benötigen, sondern sich im *client* bearbeiten lassen (sortieren, suchen etc.)
@@ -28,4 +31,5 @@ und mache daraus dann einen kleinen Weather forecast daraus.
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
