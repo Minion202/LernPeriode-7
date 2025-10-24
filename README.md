@@ -4,27 +4,28 @@
 
 ## Grob-Planung
 
-1. Für welche API möchten Sie ein eigenes *front end* erstellen?
-2. Welche groben Funktionalitäten soll Ihr *front end* zur Verfügung stellen?
-3. Was möchten Sie insbesondere dabei lernen oder üben?
+1. Für welche API möchten Sie ein eigenes *front end* erstellen? Für das Wetter.
+2. Welche groben Funktionalitäten soll Ihr *front end* zur Verfügung stellen? Eine To-Do-List, einen Timer und einen Weather forecast.
+3. Was möchten Sie insbesondere dabei lernen oder üben? CSS,HTML und Javascript.
 
 ## 24.10.
 
-- [ ] Arbeitspaket 1: Erstellen Sie mehrere Skizzen von Ihrem *front end*. Überlegen Sie sich auch, welche Elemente die Interaktion mit dem *back end* auslösen und wie sich die Oberfläche dadurch verändert. Bauen Sie auch Interaktionen ein, die *keinen* Aufruf der API benötigen, sondern sich im *client* bearbeiten lassen (sortieren, suchen etc.)
-- [ ] Arbeitspaket 2: Setzen Sie in HTML und CSS Ihren Entwurf auf rudimentäre Weise um.
-- [ ] Arbeitspaket 3: Schreiben Sie ersten JS-Code als *proof of concept* (bspw. Meldung bei Klick auf Knopf-Element)
+- [x] Arbeitspaket 1: Erstellen Sie mehrere Skizzen von Ihrem *front end*. Überlegen Sie sich auch, welche Elemente die Interaktion mit dem *back end* auslösen und wie sich die Oberfläche dadurch verändert. Bauen Sie auch Interaktionen ein, die *keinen* Aufruf der API benötigen, sondern sich im *client* bearbeiten lassen (sortieren, suchen etc.)
+- [x] Arbeitspaket 2: Setzen Sie in HTML und CSS Ihren Entwurf auf rudimentäre Weise um.
+- [x] Arbeitspaket 3: Schreiben Sie ersten JS-Code als *proof of concept* (bspw. Meldung bei Klick auf Knopf-Element)
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich mir zuerst überlegt, was für eine Website ich erstellen möchte und bin dann auf Prouducti gekommen. Also eine Website die gut ist für mich um Produktiv zu sein. Ich habe dannach noch ein ABI ausgewählt 
+und mache daraus dann einen kleinen Weather forecast daraus.
 
-☝️ Vergessen Sie nicht, einen ersten Code und Skizzen auf github hochzuladen!
 
 ## 31.10.
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] To-Do-List anpassen mit Farben und Icon pink machen 
+- [ ] Mit dem Timer starten, also zuerst mal nur ein Block
+- [ ] Den Titel Producti geben, und den Timer und die To-Do-List so anpassen das es auf der Website gut aussieht
+- [ ] Den Timer anfangen zuprogrammieren
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
