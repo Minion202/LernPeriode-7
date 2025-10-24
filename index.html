@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="widget">
+    <header class="widget-header">
+      <div class="traffic">
+        <span></span><span></span><span></span>
+      </div>
+      <h1>To-Do List</h1>
+    </header>
+
+    <section class="top-row">
+      <!-- Datum -->
+      <div id="date-box" class="card">
+        <span class="line" id="weekday">Mittwoch</span>
+        <span class="line big" id="day">24</span>
+        <span class="line" id="month">Oktober</span>
+      </div>
+
+      <!-- Fortschritt -->
+      <section class="progress card">
+  <h2>Progress:</h2>
+  <div class="progress-track" aria-label="Task progress">
+    <div class="progress-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  </div>
+  <div class="progress-text" id="progress-label">0 / 0 tasks done</div>
+</section>
+
+    </section>
+
+    <!-- Neue Aufgabe -->
+    <section class="add">
+      <input id="newTask" type="text" placeholder="Input your task!" />
+      <button id="addBtn" class="btn">Add Task</button>
+    </section>
+
+    <!-- Aufgaben -->
+    <section class="tasks card">
+      <h3>My Tasks:</h3>
+      <div id="tasks"></div>
+    </section>
+  </main>
+
+  <script src="msf.js"></script>
+  <script>
+    // Datum setzen
+    const now = new Date();
+    document.getElementById("weekday").textContent = now.toLocaleDateString("de-DE", { weekday: "long" });
+    document.getElementById("day").textContent = now.getDate();
+    document.getElementById("month").textContent = now.toLocaleDateString("de-DE", { month: "long" });
+
+    // Add-Button + Enter-Key
+    const addBtn = document.getElementById("addBtn");
+    const input = document.getElementById("newTask");
+    addBtn.addEventListener("click", () => {
+      if (input.value.trim()) addTask(input.value.trim());
+    });
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && input.value.trim()) addTask(input.value.trim());
+    });
+  </script>
+</body>
+</html>
