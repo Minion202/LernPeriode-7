@@ -23,14 +23,15 @@ und mache daraus dann einen kleinen Weather forecast daraus.
 
 ## 31.10.
 
-- [ ] To-Do-List anpassen mit Farben und das Icon pink machen 
-- [ ] Einen Block erstellen der Farbig ist für den Timer
+- [x] To-Do-List anpassen mit Farben und das Icon pink machen 
+- [x] Einen Block erstellen der Farbig ist für den Timer
 - [ ] Den Titel Producti geben, und den Timer und die To-Do-List so anpassen, dass es auf der Website gut aussieht
-- [ ] Den Timer anfangen zuprogrammieren mit React
+- [x] Den Timer anfangen zuprogrammieren mit React
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
