@@ -67,3 +67,43 @@
   </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirby Pomodoro</title>
+  <link rel="stylesheet" href="kirby.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="kirby-box">
+    <h1>PomoKirby</h1>
+    <p id="k-status" class="k-status">Work Time</p>
+
+    <div class="kirby-timer">
+      <div id="k-time" class="kirby-time">25:00</div>
+    </div>
+
+    <label class="kirby-select">
+      <span>Choose duration:</span>
+      <select id="k-select">
+        <option value="15">15 minutes</option>
+        <option value="20">20 minutes</option>
+        <option value="25" selected>25 minutes</option>
+        <option value="30">30 minutes</option>
+      </select>
+    </label>
+
+    <div class="kirby-buttons">
+      <button id="k-start">Start</button>
+      <button id="k-reset">Reset</button>
+    </div>
+
+    <img src="kirby.png" alt="Kirby" class="kirby-img">
+  </main>
+
+  <script src="kirby.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+:root {
+  --pink: #ff9acb;
+  --rose: #ff6fa3;
+  --cream: #fff7f9;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(60% 60% at 50% 30%, var(--cream), #fff);
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.kirby-box {
+  background: #fff;
+  border: 4px solid var(--pink);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 0 var(--pink), 0 12px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.kirby-time {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.kirby-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.kirby-buttons button {
+  background: #fff;
+  border: 3px solid var(--pink);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.kirby-buttons button:hover {
+  background: var(--cream);
+}
+
+.kirby-img {
+  width: 250px;
+  margin-top: 1rem;
+}
+
+.kirby-select {
+  margin: 1rem 0;
+}
