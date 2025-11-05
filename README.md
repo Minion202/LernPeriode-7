@@ -28,9 +28,17 @@ und mache daraus dann einen kleinen Weather forecast daraus.
 - [ ] Den Titel Producti geben, und den Timer und die To-Do-List so anpassen, dass es auf der Website gut aussieht
 - [x] Den Timer anfangen zuprogrammieren mit React
 
-✍️ Heute habe ich
+Heute habe ich den Timer erstellt, der gut funktioniert. Ich habe die Inspiration von einem Mitski Timer gesehen und habe es mit Kirby dennoch umegesetzt. Ich finde ich ben sehr gut vorran gekommen. 
+Es gibt jedoch noch einige Designverbesserungs möglichkeiten, um die ich mich aber beim nächsten mal kümmern werde.
+
+## 07.11,
+
+- [ ] Den Timer Block anpassen das es auch so wie beim To-Do Block aussieht
+- [ ] Den Timer Block anpassen dass er zentriert ist neben dem To-Do Block
+- [ ] Einen neuen Block erstellen für den Wetter Block
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
