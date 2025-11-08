@@ -31,13 +31,25 @@ und mache daraus dann einen kleinen Weather forecast daraus.
 Heute habe ich den Timer erstellt, der gut funktioniert. Ich habe die Inspiration von einem Mitski Timer gesehen und habe es mit Kirby dennoch umegesetzt. Ich finde ich ben sehr gut vorran gekommen. 
 Es gibt jedoch noch einige Designverbesserungs möglichkeiten, um die ich mich aber beim nächsten mal kümmern werde.
 
-## 07.11,
+## 07.11.
 
-- [ ] Den Timer Block anpassen das es auch so wie beim To-Do Block aussieht
-- [ ] Den Timer Block anpassen dass er zentriert ist neben dem To-Do Block
-- [ ] Einen neuen Block erstellen für den Wetter Block
+- [x] Den Timer Block anpassen das es auch so wie beim To-Do Block aussieht
+- [x] Den Timer Block anpassen dass er zentriert ist neben dem To-Do Block
+- [x] Einen neuen Block erstellen für den Wetter Block
+- [x] Den Wetter Block anfangen zu programmieren
+
+Heute bin ich sehr gut vorangekommen. Ich habe den Wetter-Block fertig programmiert und dabei zum ersten Mal mit einer API gearbeitet. Das Ergebnis ist meiner Meinung nach richtig gelungen. Nächste Woche möchte ich den Wetter-Block noch verbessern, indem ich Icons wie Sonne oder Wolken hinzufüge.
+
+## 14.11.
+
+- [ ] Blöcke sauber ausrichten: Abstände, Breiten und Höhe einheitlich setzen, Responsive prüfen.
+- [ ] Wetter-Block mit Icons erweitern: Je nach WMO-Code Sonne, Wolke, Regen oder Schnee anzeigen; Tag/Nacht berücksichtigen.
+- [ ] Großen Seitentitel hinzufügen: Name oben zentriert, passende Schriftgrösse.
+- [ ] Design verbessern: Farben, Schriften und Buttons
+
 
 ☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
 
 
 
