@@ -3,51 +3,119 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>To-Do List</title>
+  <title>Producty</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="kirby.css" />
+  <style>
+    /* Layout: drei Spalten zentriert */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: radial-gradient(60% 60% at 50% 30%, #fff7f9, #fff);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      font-family: "MyFont", sans-serif;
+    }
+    .column { display: flex; flex-direction: column; align-items: center; }
+
+    /* Wetterbox Styling nutzt deine Variablen aus style.css */
+    .weather-box {
+      background: #fff;
+      border: 4px solid var(--pink-300);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 24px 30px;
+      text-align: center;
+      width: 320px;
+      margin-top: 40px;
+    }
+    .weather-box h1 { color: var(--pink-600); margin-bottom: 12px; }
+    .temp-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--text);
+      margin-top: 6px;
+    }
+  </style>
 </head>
 <body>
-  <main class="widget">
-    <header class="widget-header">
-      <div class="traffic">
-        <span></span><span></span><span></span>
-      </div>
-      <h1>To-Do List</h1>
-    </header>
+  <!-- Linke Spalte: To-Do -->
+  <div class="column">
+    <main class="widget">
+      <header class="widget-header">
+        <div class="traffic"><span></span><span></span><span></span></div>
+        <h1>To-Do List</h1>
+      </header>
 
-    <section class="top-row">
-      <!-- Datum -->
-      <div id="date-box" class="card">
-        <span class="line" id="weekday">Mittwoch</span>
-        <span class="line big" id="day">24</span>
-        <span class="line" id="month">Oktober</span>
-      </div>
+      <section class="top-row">
+        <div id="date-box" class="card">
+          <span class="line" id="weekday">Mittwoch</span>
+          <span class="line big" id="day">24</span>
+          <span class="line" id="month">Oktober</span>
+        </div>
 
-      <!-- Fortschritt -->
-      <section class="progress card">
-  <h2>Progress:</h2>
-  <div class="progress-track" aria-label="Task progress">
-    <div class="progress-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+        <section class="progress card">
+          <h2>Progress:</h2>
+          <div class="progress-track" aria-label="Task progress">
+            <div class="progress-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+          </div>
+          <div class="progress-text" id="progress-label">0 / 0 tasks done</div>
+        </section>
+      </section>
+
+      <section class="add">
+        <input id="newTask" type="text" placeholder="Input your task!" />
+        <button id="addBtn" class="btn">Add Task</button>
+      </section>
+
+      <section class="tasks card">
+        <h3>My Tasks:</h3>
+        <div id="tasks"></div>
+      </section>
+    </main>
   </div>
-  <div class="progress-text" id="progress-label">0 / 0 tasks done</div>
-</section>
 
-    </section>
+  <!-- Mitte: Wetter -->
+  <div class="column">
+    <div class="weather-box">
+      <h1>Wetter Zürich</h1>
+      <div id="weather-output">Lade Wetterdaten...</div>
+    </div>
+  </div>
 
-    <!-- Neue Aufgabe -->
-    <section class="add">
-      <input id="newTask" type="text" placeholder="Input your task!" />
-      <button id="addBtn" class="btn">Add Task</button>
-    </section>
+  <!-- Rechts: Kirby-Timer -->
+  <div class="column">
+    <main class="kirby-box">
+      <h1>PomoKirby</h1>
+      <p id="k-status" class="k-status">Work Time</p>
+      <div class="kirby-timer"><div id="k-time" class="kirby-time">25:00</div></div>
+      <label class="kirby-select">
+        <span>Choose duration:</span>
+        <select id="k-select">
+          <option value="15">15 minutes</option>
+          <option value="20">20 minutes</option>
+          <option value="25" selected>25 minutes</option>
+          <option value="30">30 minutes</option>
+        </select>
+      </label>
+      <div class="kirby-buttons">
+        <button id="k-start">Start</button>
+        <button id="k-reset">Reset</button>
+      </div>
+      <img src="kirby.png" alt="Kirby" class="kirby-img">
+    </main>
+  </div>
 
-    <!-- Aufgaben -->
-    <section class="tasks card">
-      <h3>My Tasks:</h3>
-      <div id="tasks"></div>
-    </section>
-  </main>
-
+  <!-- Skripte (unverändert) -->
   <script src="msf.js"></script>
+  <script src="weather.js"></script>
+  <script src="kirby.js"></script>
+
   <script>
     // Datum setzen
     const now = new Date();
@@ -58,52 +126,8 @@
     // Add-Button + Enter-Key
     const addBtn = document.getElementById("addBtn");
     const input = document.getElementById("newTask");
-    addBtn.addEventListener("click", () => {
-      if (input.value.trim()) addTask(input.value.trim());
-    });
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" && input.value.trim()) addTask(input.value.trim());
-    });
+    addBtn.addEventListener("click", () => { if (input.value.trim()) addTask(input.value.trim()); });
+    input.addEventListener("keydown", (e) => { if (e.key === "Enter" && input.value.trim()) addTask(input.value.trim()); });
   </script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kirby Pomodoro</title>
-  <link rel="stylesheet" href="kirby.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main class="kirby-box">
-    <h1>PomoKirby</h1>
-    <p id="k-status" class="k-status">Work Time</p>
-
-    <div class="kirby-timer">
-      <div id="k-time" class="kirby-time">25:00</div>
-    </div>
-
-    <label class="kirby-select">
-      <span>Choose duration:</span>
-      <select id="k-select">
-        <option value="15">15 minutes</option>
-        <option value="20">20 minutes</option>
-        <option value="25" selected>25 minutes</option>
-        <option value="30">30 minutes</option>
-      </select>
-    </label>
-
-    <div class="kirby-buttons">
-      <button id="k-start">Start</button>
-      <button id="k-reset">Reset</button>
-    </div>
-
-    <img src="kirby.png" alt="Kirby" class="kirby-img">
-  </main>
-
-  <script src="kirby.js" defer></script>
 </body>
 </html>
