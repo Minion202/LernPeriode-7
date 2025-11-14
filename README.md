@@ -42,13 +42,21 @@ Heute bin ich sehr gut vorangekommen. Ich habe den Wetter-Block fertig programmi
 
 ## 14.11.
 
-- [ ] Blöcke sauber ausrichten: Abstände, Breiten und Höhe einheitlich setzen, Responsive prüfen.
-- [ ] Wetter-Block mit Icons erweitern: Je nach WMO-Code Sonne, Wolke, Regen oder Schnee anzeigen; Tag/Nacht berücksichtigen.
-- [ ] Großen Seitentitel hinzufügen: Name oben zentriert, passende Schriftgrösse.
-- [ ] Design verbessern: Farben, Schriften und Buttons
+- [x] Blöcke sauber ausrichten: Abstände, Breiten und Höhe einheitlich setzen, Responsive prüfen.
+- [x] Wetter-Block mit Icons erweitern: Je nach WMO-Code Sonne, Wolke oder Regen anzeigen.
+- [ ] Grossen Seitentitel hinzufügen: Name oben zentriert, passende Schriftgrösse.
+- [x] Design verbessern: Farben, Schriften und Buttons
+      
+Heute bin ich gut vorangekommen. Ich habe mehrere Elemente in meinem Code überarbeitet, insbesondere die Farben und das Design, und die Icons so angepasst, dass sie mir gefallen und sich automatisch dem Wetter anpassen. Dafür musste ich zuerst herausfinden, wie man diese Funktion korrekt umsetzt, was einen grossen Teil meiner Zeit beansprucht hat. Deshalb blieb heute keine Zeit mehr, um den Titel zu erstellen.
+
+## 21.11.
+
+- [ ] Grossen Seitentitel hinzufügen: Name oben links, passende Schriftgrösse.
+- [ ] Design verbessern: Farben und Buttons
 
 
-☝️ Vergessen Sie nicht, Ihren Code auf github hochzuladen
+
+
 
 
 
