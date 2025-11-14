@@ -1,56 +1,53 @@
-// weather.js
-// Holt Wetterdaten von Open-Meteo (Modell: meteoswiss_icon_ch1) für Zürich
+const WX_URL = "https://api.open-meteo.com/v1/forecast";
 
-const API_URL = "https://api.open-meteo.com/v1/forecast";
-const params = new URLSearchParams({
+const WX_PARAMS = new URLSearchParams({
   latitude: "47.37",
   longitude: "8.55",
-  hourly: "temperature_2m",
+  hourly: "temperature_2m,precipitation,weathercode",
   models: "meteoswiss_icon_ch1",
   timezone: "Europe/Zurich"
 });
 
-async function getHourlyTemps() {
-  const url = `${API_URL}?${params.toString()}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-
+async function loadWX() {
+  const res = await fetch(`${WX_URL}?${WX_PARAMS}`);
   const data = await res.json();
 
-  const times = data?.hourly?.time || [];
-  const temps = data?.hourly?.temperature_2m || [];
+  const times = data.hourly.time;
+  const temps = data.hourly.temperature_2m;
+  const precip = data.hourly.precipitation;
+  const codes = data.hourly.weathercode;
 
-  if (!times.length || !temps.length) throw new Error("Keine Wetterdaten gefunden");
-
-  // Nimm die nächsten 24 Stunden ab jetzt
   const now = new Date();
-  const startIdx = times.findIndex(t => new Date(t) >= now);
-  const from = startIdx >= 0 ? startIdx : 0;
-  const sliceTimes = times.slice(from, from + 24);
-  const sliceTemps = temps.slice(from, from + 24);
+  let idx = times.findIndex(t => new Date(t) >= now);
+  if (idx === -1) idx = 0;
 
-  // Gib sie als Array von Objekten zurück
-  return sliceTimes.map((t, i) => ({
-    time: new Date(t).toLocaleTimeString("de-DE", {
-      hour: "2-digit",
-      minute: "2-digit"
-    }),
-    temp: sliceTemps[i].toFixed(1)
-  }));
+  const temp = temps[idx];
+  const rain = precip[idx];
+  const code = codes[idx];
+
+  // icons
+  const sun   = document.getElementById("wx-sun");
+  const cloud = document.getElementById("wx-cloud");
+  const rainI = document.getElementById("wx-rain");
+
+  sun.style.display = "none";
+  cloud.style.display = "none";
+  rainI.style.display = "none";
+
+  const rainCodes = [51,53,55,61,63,65,80,81,82,85,86];
+
+  if (rain > 0.1 || rainCodes.includes(code)) {
+    rainI.style.display = "block";
+    document.getElementById("wx-text").textContent = "Regen";
+  } else if (temp >= 20 && (code === 0 || code === 1)) {
+    sun.style.display = "block";
+    document.getElementById("wx-text").textContent = "Sonnig";
+  } else {
+    cloud.style.display = "block";
+    document.getElementById("wx-text").textContent = "Bewölkt";
+  }
+
+  document.getElementById("wx-temp").textContent = temp.toFixed(1) + " °C";
 }
 
-// Ausgabe in das HTML-Element
-getHourlyTemps()
-  .then((entries) => {
-    const out = document.getElementById("weather-output");
-    out.innerHTML = entries
-      .map(
-        (e) =>
-          `<div class="temp-row"><span>${e.time}</span><span>${e.temp}°C</span></div>`
-      )
-      .join("");
-  })
-  .catch((err) => {
-    document.getElementById("weather-output").textContent =
-      "Fehler beim Laden: " + err.message;
-  });
+loadWX();
