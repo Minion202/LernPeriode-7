@@ -4,7 +4,6 @@
   font-display: swap;
 }
 
-/* Variablen */
 :root {
   --pink-100: #ffe0ea;
   --pink-300: #ffafc0;
@@ -56,7 +55,6 @@ body {
 .traffic span:nth-child(2) { background: #f6d36c; }
 .traffic span:nth-child(3) { background: #79d181; }
 
-/* Cards */
 .top-row {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -70,7 +68,6 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Datum */
 #date-box {
   background: var(--green-200);
   color: #fff;
@@ -79,7 +76,6 @@ body {
 }
 #date-box .big { font-size: 34px; margin: 6px 0; }
 
-/* Fortschritt */
 .progress h2 { margin: 0 0 8px 0; color: var(--pink-600); }
 
 .progress h2 {
@@ -115,7 +111,6 @@ body {
   font-family: "MyFont";
 }
 
-/* Wenn 100% voll, sanft grün + Bounce */
 .progress-fill.is-complete {
   background: linear-gradient(90deg, #77cf5a, #5db845);
   animation: bounce 0.6s ease;
@@ -128,15 +123,14 @@ body {
   padding: 0 8px;
 }
 
-/* Start leer */
+
 .progress-track.is-empty .progress-text { color: #6b6b6b; }
-/* Voll */
+
 .progress-fill.is-complete {
   background: linear-gradient(90deg, #77cf5a, #5db845);
   animation: bounce 0.6s ease;
 }
 
-/* Bounce-Effekt */
 @keyframes bounce {
   0% { transform: scale(1); }
   30% { transform: scale(1.08); }
@@ -144,7 +138,6 @@ body {
   100% { transform: scale(1); }
 }
 
-/* Eingabe */
 .add {
   display: flex;
   gap: 10px;
@@ -168,7 +161,6 @@ body {
   font-family: "MyFont";
 }
 
-/* Aufgaben */
 .tasks { background: #f8fbf4; }
 #tasks { display: flex; flex-direction: column; gap: 10px; }
 .task {
@@ -191,8 +183,6 @@ body {
 .task button img { width: 18px; height: 18px; }
 
 
-
-/* Drei-Spalten-Layout (überstimmt das body-Layout aus kirby.css) */
 body.page-grid {
   display: flex;
   justify-content: center;
@@ -226,7 +216,7 @@ body.page-grid {
 
 .weather-box h1 {
   color: var(--text);
-  margin-bottom: 12px;
+  margin-bottom: 50px;
 }
 
 .temp-row {
@@ -253,9 +243,6 @@ body.page-grid {
 }
 
 
-/* ===========================
-   Wetter-Widget (isoliert)
-   =========================== */
 
 .wx-container {
   background: #fff;
@@ -298,4 +285,12 @@ body.page-grid {
   margin-top: 5px;
   font-size: 14px;
   color: var(--muted);
+}
+
+
+h1 {
+width:100%; 
+text-align:center; 
+font-size:120px; 
+margin-top:160px;
 }

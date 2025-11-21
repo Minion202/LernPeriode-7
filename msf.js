@@ -11,10 +11,10 @@ function addTask(taskText) {
   const removeIcon = document.createElement("img");
   removeBtn.style.backgroundColor = "transparent";
   removeBtn.style.borderStyle = "none";
-  removeIcon.src = "Cross.png"; // <-- dein Bildname hier!
+  removeIcon.src = "Cross.png";
   removeIcon.style.width = "20px";
   removeIcon.style.height = "20px";
-  removeIcon.style.filter = "invert(1)"; // weiß auf dunklem Hintergrund sichtbar
+  removeIcon.style.filter = "invert(1)"; 
   removeBtn.appendChild(removeIcon);
 
   removeBtn.addEventListener("click", () => {

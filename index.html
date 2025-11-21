@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="kirby.css" />
   <style>
-    /* Layout: drei Spalten zentriert */
     body {
       display: flex;
       justify-content: center;
@@ -44,8 +43,9 @@
   </style>
 </head>
 <body class="page-grid">
-
-  <!-- Linke Spalte: To-Do -->
+<h1>
+  Producty
+</h1>
   <div class="column">
     <main class="widget">
       <header class="widget-header">
@@ -81,10 +81,12 @@
     </main>
   </div>
 
-  <!-- Mitte: Wetter -->
   <div class="column">
-   <div class="wx-container">
-  <h1 class="wx-title">Wetter Zürich</h1>
+<div class="wx-container">
+  <header class="widget-header">
+    <div class="traffic"><span></span><span></span><span></span></div>
+    <h1 class="wx-title">Wetter Zürich</h1>
+  </header>
 
   <div class="wx-current">
     <img id="wx-sun"   src="sun.png"  class="wx-icon">
@@ -98,10 +100,13 @@
 
   </div>
 
-  <!-- Rechts: Kirby-Timer -->
   <div class="column">
-    <main class="kirby-box">
-      <h1>PomoKirby</h1>
+<main class="kirby-box">
+  <header class="widget-header">
+    <div class="traffic"><span></span><span></span><span></span></div>
+    <h2>PomoKirby</h2>
+  </header>
+
       <p id="k-status" class="k-status">Work Time</p>
       <div class="kirby-timer"><div id="k-time" class="kirby-time">25:00</div></div>
       <label class="kirby-select">
@@ -121,19 +126,16 @@
     </main>
   </div>
 
-  <!-- Skripte (unverändert) -->
   <script src="msf.js"></script>
   <script src="weather.js"></script>
   <script src="kirby.js"></script>
 
   <script>
-    // Datum setzen
     const now = new Date();
     document.getElementById("weekday").textContent = now.toLocaleDateString("de-DE", { weekday: "long" });
     document.getElementById("day").textContent = now.getDate();
     document.getElementById("month").textContent = now.toLocaleDateString("de-DE", { month: "long" });
 
-    // Add-Button + Enter-Key
     const addBtn = document.getElementById("addBtn");
     const input = document.getElementById("newTask");
     addBtn.addEventListener("click", () => { if (input.value.trim()) addTask(input.value.trim()); });
