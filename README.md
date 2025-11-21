@@ -51,11 +51,16 @@ Heute bin ich gut vorangekommen. Ich habe mehrere Elemente in meinem Code übera
 
 ## 21.11.
 
-- [ ] Grossen Seitentitel hinzufügen: Name oben links, passende Schriftgrösse.
-- [ ] Design verbessern: Farben und Buttons
+- [x] Grossen Seitentitel hinzufügen: Name oben links, passende Schriftgrösse.
+- [x] Design verbessern: Farben und Buttons
+
+Heute habe ich mein Projekt endlich fertig programmiert. Beim Design gibt es zwar noch Verbesserungspotenzial,
+aber insgesamt gefällt es mir sehr gut. Ich bin heute deutlich vorangekommen und zufrieden mit dem Ergebnis.
 
 
+## 28.11.
 
+- [ ] Design verbessern: Farben etc. (Verbesserungsmöglichkeiten anschauen)
 
 
 
