@@ -2,6 +2,24 @@
 
 24.10. bis 19.12.2025
 
+<img width="3412" height="1862" alt="image" src="https://github.com/user-attachments/assets/0dd97797-9800-474b-b9e0-8a5d91aba9e7" />
+
+
+
+## Fertiges Projekt 
+
+In meinem fertigen Projekt geht es um Producty, wie der Name schon sagt, um produktiv zu sein. Es handelt sich um eine Lern und Organisationsseite, die dabei hilft, den Überblick zu behalten und fokussiert zu arbeiten.
+Auf der Seite kann man drei verschiedene Dinge machen. Zuerst gibt es meine To Do List. Dort kann man Aufgaben hinzufügen und auch wieder löschen. Zusätzlich gibt es eine Task-bar, die anzeigt, wie viele Aufgaben bereits erledigt sind, also wie weit man insgesamt ist. Ausserdem wird das aktuelle Datum angezeigt, damit man immer weiss, an welchem Tag man arbeitet.
+Als zweites gibt es einen kleinen Wetter Block, der das aktuelle Wetter anzeigt und sich daran anpasst. Dafür habe ich eine API verwendet, die die Wetterdaten abruft. Je nach Wetter wird ein passendes Icon angezeigt und man sieht auch, wie hoch die aktuelle Temperatur ist.
+Als letztes habe ich einen Timer eingebaut. Dort kann man verschiedene Zeiten einstellen, den Timer starten, stoppen und auch wieder zurücksetzen. Der Timer eignet sich gut zum Lernen oder um konzentriert an einer Aufgabe zu arbeiten. Insgesamt soll Producty helfen, strukturierter und produktiver zu lernen.
+
+## Reflexion
+
+Ich finde, dass ich insgesamt sehr schnell vorangekommen bin und mit dem Projekt wirklich zufrieden bin. Meiner Meinung nach ist es eines meiner besten Projekte bisher. Besonders daran ist, dass es das erste Mal war, dass ich mit einer API und mit JavaScript gearbeitet habe.
+Am Anfang war das für mich neu und teilweise auch etwas schwierig, weil ich vieles noch nicht kannte.
+Mit der Zeit habe ich mich aber immer besser zurechtgefunden und verstanden, wie eine API funktioniert und wie man die Daten mit JavaScript weiterverarbeitet. Es hat dann auch immer besser geklappt, Probleme selbst zu lösen und logisch zu denken. Insgesamt ist das Projekt sehr gut gelaufen, und ich bin stolz auf das Ergebnis. Ich habe gemerkt, dass ich in kurzer Zeit viel lernen kann und dass mir das Arbeiten mit neuen Technologien eigentlich gut liegt.
+
+
 ## Grob-Planung
 
 1. Für welche API möchten Sie ein eigenes *front end* erstellen? Für das Wetter.
@@ -61,6 +79,7 @@ aber insgesamt gefällt es mir sehr gut. Ich bin heute deutlich vorangekommen un
 ## 12.11.
 
 - [ ] Reflexion schreiben und Bilder hinzufügen
+
 
 
 
