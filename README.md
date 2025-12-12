@@ -58,9 +58,10 @@ Heute habe ich mein Projekt endlich fertig programmiert. Beim Design gibt es zwa
 aber insgesamt gefällt es mir sehr gut. Ich bin heute deutlich vorangekommen und zufrieden mit dem Ergebnis.
 
 
-## 28.11.
+## 12.11.
 
-- [ ] Design verbessern: Farben etc. (Verbesserungsmöglichkeiten anschauen)
+- [ ] Reflexion schreiben und Bilder hinzufügen
+
 
 
 
