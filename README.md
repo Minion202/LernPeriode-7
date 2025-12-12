@@ -78,7 +78,8 @@ aber insgesamt gefällt es mir sehr gut. Ich bin heute deutlich vorangekommen un
 
 ## 12.11.
 
-- [ ] Reflexion schreiben und Bilder hinzufügen
+- [x] Reflexion schreiben und Bilder hinzufügen
+
 
 
 
