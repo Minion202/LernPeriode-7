@@ -1,4 +1,4 @@
-# Lern-Periode 7
+# Lern Periode 7
 ## Producty Website mit API 
 
 24.10. bis 19.12.2025
